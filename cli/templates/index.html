@@ -4,23 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <title>Tocunaro Server</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">    
+    <link rel="icon" type="image/x-icon" href="templates/favicon.ico">
+    <link rel="stylesheet" href="templates/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.8.1/web3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <title>Tocunaro </title>
 </head>
-<body style="background-color: #191C1C;">
-    <h1 style="
-        margin-top: 16rem;
-        color: #4FDAD2;
-        text-align: center;
-        font-family: 'Roboto', sans-serif;
-        font-size: 3rem;
-        font-weight: 300;
-    "> Tocunaro - create DApps easy</h1>
+<body>
+    <div class="container">
+        <div class="bubbles">
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:21;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:28;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:29;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:30;"></span>
+            <span style="--i:9;"></span>
+            <span style="--i:21;"></span>
+        </div>
+    </div>
+    <div
+        class="front"
+    >
+        <h1 
+            class="title"
+            id="title"
+        > Tocunaro - create DApps easy </h1>
+
+        <button 
+            class="ethBtn"
+            id="enableEth"
+        >
+            Enable Ethereum
+        </button>
+    </div>
+    
+    <script src="templates/app.js"></script>
 </body>
 </html>

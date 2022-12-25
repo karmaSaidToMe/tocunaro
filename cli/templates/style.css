@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #0C192C;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bubbles {
+    position: relative;
+    display: flex;
+}
+
+.bubbles span {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #4FC3DC;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4FC3DC44,
+                0 0 50px #4FC3DC,
+                0 0 100px #4FC3DC;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(120s / var(--i));
+}
+
+.bubbles span:nth-child(even) {
+    background: #FF2D75;
+    box-shadow: 0 0 0 10px #FF2D7544,
+                0 0 50px #FF2D75,
+                0 0 100px #FF2D75;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(100vh) scale(0);
+    }
+    100% {
+        transform: translateY(-10vh) scale(1);
+    }
+}
+
+.front {
+    background-color: rgba(0, 0, 0, .10);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.title {
+    margin-top: 6rem;
+    color: #4FDAD2;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.ethBtn {
+    margin-top: 18rem;
+    text-align: center;
+    background-color: #0C192C;
+    border-radius: 1rem;
+    border-color: #4FDAD2;
+    border-style: solid;
+    color: #4FDAD2;
+    height: 60px;
+    width: 180px;
+
+    font-size: 1rem;
+    font-weight: 400;
+    transition: 400ms;
+}
+
+.ethBtn:hover {
+    background-color: #4FDAD2;
+    border-radius: 1rem;
+    border-color: #4FDAD2;
+    color: #191C1C;
+    cursor: pointer;
+    transition: 400ms;
+}

@@ -1,4 +1,4 @@
-from main import run
+from main import goLive
 import sys
 
 args = sys.argv[1:]
@@ -20,4 +20,4 @@ for i in range(len(args) - 1):
             case _:
                 print("Error: undefined argument")
 
-run(runArgs)
+goLive(runArgs)
